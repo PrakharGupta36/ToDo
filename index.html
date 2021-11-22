@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo</title>
+    <link rel="icon" href="/assets/images/icon.svg" />
+    <link rel="stylesheet" href="app/styles/global.css" />
+    <script src="app/js/app.js" defer></script>
+    <script src="app/js/buttons.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-1">
+        <h3><a href="index.html"> TODO </a></h3>
+      </div>
+      <div class="header-2">
+        <button id="theme">
+          <img src="/assets/images/icon-sun.svg" alt="img" />
+        </button>
+      </div>
+      <div class="header-3">
+        <input
+          type="text"
+          name="todo"
+          id="input"
+          placeholder="Create a new task..."
+        />
+      </div>
+    </header>
+    <main>
+      <section id="todo-wrapper"></section>
+      <section id="completed">
+
+      </section>
+      
+      <section id="todo-info">
+        <div class="todo-info-1">
+          <p id="tasksleft"></p>
+          <button id="clear">Clear Completed</button>
+        </div>
+
+        <div class="todo-info-2">
+          <button id="all" class="active info-buttons">All</button>
+          <button id="active" class="info-buttons">Active</button>
+          <button id="completed" class="info-buttons">Completed</button>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

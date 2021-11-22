@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500&display=swap');
+
+@import url(/app/styles/header.css);
+@import url(/app/styles/variable.css);
+@import url(/app/styles/todo-wrapper.css);
+@import url(/app/styles/checkbox.css);
+
+*{
+  font-family: Josefin Sans;
+}
+
+html,body{
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  background-color:  var(--very-dark-blue);
+}
+
+input,a,button{
+  cursor: pointer;
+}
+
+.para{
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}

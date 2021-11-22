@@ -1,0 +1,82 @@
+
+
+
+#todo-wrapper div, #completed div{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  color: white;
+  background-color: var(--very-dark-desaturated-blue);
+  transition: all 0.25s;
+}
+
+
+#todo-wrapper, #completed{
+  width: 85%;
+  margin: 1rem auto;
+  background-color: var(--very-dark-desaturated-blue);
+}
+
+
+
+
+
+#todo-wrapper div:hover,#completed div:hover {
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+  border-radius: .25rem;
+}
+
+#todo-wrapper button ,#completed button  {
+  font-family: Poppins;
+  color: rgba(187, 96, 96, 0.911);
+  font-size: 1.2rem;
+  background: transparent;
+  border: none;
+}
+
+#todo-info{
+  display: grid;
+  background-color: var(--very-dark-desaturated-blue);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+  margin: 5rem 1rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  transition: all 0.5s;
+  gap: 2rem;
+}
+
+.todo-info-1 {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  place-items: center;
+}
+
+
+.todo-info-1 button,.todo-info-2 button{
+  background: transparent;
+  color: rgb(200, 200, 204);
+  border: none;
+  font-size: .95rem;
+}
+
+.active{
+  color: var(--bright-blue) !important;
+}
+
+
+#tasksleft {
+  color: white;
+}
+
+.noText{
+  color: white ;
+}
+
+
+.todo-info-2{
+  display: grid;
+  border-top: 1px solid gray ;
+  padding: 1rem;
+  grid-template-columns: repeat(3,1fr);
+}
